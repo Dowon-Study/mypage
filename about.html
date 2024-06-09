@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+    <style>
+        
+        * {
+            font-family: "Montserrat", "Nanum Gothic", sans-serif;
+        }
+        body {
+            background-size : 100% ;
+        }
+        /* 네비게이션 */
+               ol,
+        header ul,
+        div ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        body a:link {
+          color: white;
+          text-decoration: none;
+        }
+        body a:visited {
+          color: white;
+          text-decoration: none;
+        }
+                #header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          justify-content: space-between;
+          padding: 1rem;
+            color: white;
+            z-index: 1;
+        }
+        .active{
+          background-color: #5F4B8B;
+          transition-duration: 0.3s;
+          transition-timing-function: ease;
+          -webkit-transition-duration:0.2s;
+          -webkit-transition-timing-function:ease;
+        }
+        .deactive{
+          background-color: transparent;
+          transition-duration: 0.3s;
+          transition-timing-function: ease;
+          -webkit-transition-duration:0.2s;
+          -webkit-transition-timing-function:ease;
+        }
+        nav,
+        .icons {
+          padding: 20px;
+        }
+
+        nav ul li {
+          display: inline-block;
+          padding: 0 10px;
+            padding-top: 10px;
+            padding-bottom: -10px;
+        }
+        section{
+          width: 80vw;
+          padding: 10vw;
+          padding-top: 50vh;
+        }
+        
+        .title{
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        
+        li {
+            font-size: 20px
+        }
+        
+        .bb {
+            margin-left: 0px;
+            width: 94%;
+            height: 10px;
+            margin-left: 40px;
+            margin-top: 100px;
+            padding-bottom: 1px;
+            border-color: white;
+            color: white;
+            opacity: 100%;
+            Border-radius : 10px;
+            position: fixed;
+
+        }
+        .pro_img {
+            width: 250px;
+            height: auto;
+            border-radius: 70%;
+            margin-top: -130px;
+        }
+        .img_temp{
+            text-align: center;
+        }
+        .bg{
+            background-color: #45326E;
+            padding-bottom: 300px;
+        }
+        .box4 {
+            margin-top: 100px;
+            margin-left: 350px;
+            margin-bottom: 100px;
+        }
+        .hockey{
+          width: 250px;
+          height: auto;
+          border-radius: 5%;
+          margin-left: 100px;
+        }
+        .box6 {
+            background-color: #1F113C;
+            padding-bottom: 8px;
+            color: #8B8892;
+            text-align: center;
+        }
+        .box6 p {
+            padding-top: 25px;
+        }
+        .box2_1{
+            background-color: #45326E;
+            padding-top: 70px;
+            padding-bottom: 140px;
+            
+        }
+        /*이전 프레임 이후 부분 */
+        .alin{
+            text-align: center;
+            font-weight: bold;
+            margin-top: 50px;
+            margin-left: 12%;
+            
+            
+        }
+        .alin td{
+            padding-top: 20px;
+            padding-left: 150px;
+            font-size: 20px;
+        }
+        .alin hr{
+            opacity: 100%;
+            Border-radius : 10px;
+            padding-bottom: 2px;
+        }
+        .alin td img {
+            width: 70px;
+            padding-left: 30px;
+        }
+        .box3{
+            background-color: #45326E;
+            margin-top: 100px;
+            padding-bottom: 100px;
+        }
+        .box3 td{
+            color: white;
+            padding-right: 150px;
+        }
+        .box3 h2{
+            margin-top: 110px;
+        }
+        
+        .CIT {
+            margin-top: 100px;
+            width: 350px;
+            border-radius: 20px 20px;
+            margin-left: 200px;
+        }
+        .box4 {
+            margin-top: 100px;
+            margin-left: 350px;
+            margin-bottom: 100px;
+        }
+        .DG{
+            padding-left: 100px;
+            width: 370px;
+        }
+        .box5{
+            background-color: #45326E;
+            margin-top: 100px;
+            padding-bottom: 100px;
+            color: white;
+            padding-left: 100px;
+        }
+        .box5 td{
+            color: white;
+            padding-right: 150px;
+        }
+        .box5 h2{
+            margin-top: 110px;
+        }
+        
+        .NFT {
+            margin-top: 100px;
+            width: 350px;
+            border-radius: 20px 20px;
+            margin-left: 200px;
+        }
+    </style>
+    
+    <title>Dowon Yun</title>
+  </head>
+  <body>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+       <script type="text/javascript">
+           
+          
+          $(function(){
+            $(document).on('scroll', function(){
+                if($(window).scrollTop() > 100){
+                    $("#header").removeClass("deactive");
+                    $("#header").addClass("active");
+                }else{
+                    $("#header").removeClass("active");
+                    $("#header").addClass("deactive");
+                }
+            })
+
+        });
+          
+          
+      </script>
+      
+      
+
+      <header>
+        <div id="header" class="deactive">
+            <h1 class="title"><a href="index.html">Dowon Yun</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+      </header>
+      <hr class="bb" />
+      
+      
+      
+      
+      
+      <div class="box1">
+          <div class="bg">
+            </div>
+          <div class="img_temp">
+          <img src="img/main_por.png" class="pro_img" alt="환하게 웃고 있는 윤도원">
+              
+            <h1>윤도원</h1>
+              <br>
+              <strong><h4>"하루를 지배하는 이가 삶을 지배한다."</h4></strong>
+          </div>
+      </div>
+      <div class="box2">
+        <table class="alin">
+          <tr>
+            <td>
+                Age
+              </td>
+            <td>
+                Live
+              </td>
+                <td>
+                Education
+              </td>
+            </tr>
+          <tr>
+            <td><hr></td>
+            <td><hr></td>
+              <td><hr></td>
+            </tr>
+          <tr>
+            <td>23</td>
+              <td>Seoul</td>
+              <td>Kwangwoon University</td>
+            </tr>
+            <tr>
+            <td><br><br>Working</td>
+            <td ><br><br>Available languages</td>
+            </tr>
+            <tr>
+            <td><hr></td>
+            <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+            <td>CIT code academy</td>
+            <td colspan="2"><img src="img/python.png" alt="파이썬 이미지"><img src="img/java.png" style="width: 80px" alt="자바 이미지"><img src="img/c++.png" alt="c++이미지"><img src="img/cshap.png" style="width: 80px" alt="c# 이미지"></td>
+            </tr>
+          </table>
+      </div>
+      <div class="box3">
+          <table>
+          <tr>
+              <td><img class="CIT" src="img/CIT.png" alt="CIT코딩 학원의 간판 이미지" /></td>
+              <td><strong><h2>CIT code academy</h2></strong>
+              <br />
+              <p>
+              현재 압구정과 서울역근처에 지점을 두고 있으며 IT분야를 전문적으로 지도하는 학원입니다.
+              <br>다양한 분야의 지도 강사가 존재해 학생에게 맞는 분야를 전문적으로 지도합니다.
+              <br>현재 저는 파이썬, 데이터 구조, 벡엔드 분야 부분을 담당하여 강의 하고 있습니다.
+                  <br>
+                  그 외에 다양한 프로젝트를 진행하여 학생들의 포트폴리오도 제작하고 있습니다 :D
+              </p>
+              </td>
+              </tr>
+      </table>
+      </div>
+      <div class="box4">
+          <table>
+            <tr>
+              <td>
+                  <strong><h2>MIB(Money Is Best) TF team</h2></strong>
+                  <br>
+                  <p>
+                  주식 자동 매매 프로그램을 기획 및 경희대학교 컴퓨터 공학과와 협업하여
+                      <br> 다양한 차트들을 분석하여 실시간으로 투자하는 AI를 설계 및 제작하고 있습니다. 
+                      <br> 혹시 관심 있으신 분은 contact 로 연락 주시길 바랍니다 :D
+                  </p>
+                </td>
+                <td>
+                    <img class="DG" src="img/DG.jpeg" alt="도지코인의 대표적인 이미지">
+                </td>
+              </tr>
+          </table>
+      </div>
+      <div class="box5">
+          <table>
+              <tr> 
+                <td><img src="img/nft.png" class="NFT" alt="현대 자동차 NFT의 이미지중 하나"></td>  
+                  <td><strong><h2>Hyundai-NFT</h2></strong>
+                      <br>
+                  <p>
+                      이전에 한창 뜨고 있었던 NFT시장에서
+                      <br>
+                      현대차 기업에서 발매한 MOBEDS NFT를 보유하고 있습니다.
+                      <br>
+                      아직은 불확실한 시장이라 불안하긴 하지만 10이더 정도 투자하고 있습니다.
+                      <br>추후에는 가상화폐가 언젠가는 가치를 받는 날이 올거라고 생각하고 있습니다.
+                      
+                      </p>
+                  </td>   
+              </tr>
+      </table>
+      </div>
+    <div class="box4">
+      <table>
+        <tr>
+          <td>
+              <strong><h2>Unicorns</h2></strong>
+              <br>
+              <p>
+                광운대 아이스하키 동아리
+                  <br> 
+                  현재 디펜더 포지션에서 운동을 하고있으며 다양한 학교들과 친선전을 합니다 !
+                  <br>
+                  광운대 링크장에서도 경기가 있으니 많은 관심 부탁드립니다 :D
+              </p>
+            </td>
+            <td>
+              <img src="img/hockey.png" class="hockey" alt="아이스 하키 사진중 하나">
+            </td>
+          
+          </tr>
+      
+      
+      </table>
+  
+  </div>
+
+      
+      <div class="box6">
+          
+            <p>Use Framework by Bootstrap, jquery, fontawesome. | Designed by Dowon Yun</p>
+          
+      </div>
+  </body>
+</html>

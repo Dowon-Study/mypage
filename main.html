@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+    <style>
+        
+        * {
+            font-family: "Montserrat", "Nanum Gothic", sans-serif;
+        }
+        
+        body {
+            background-image: url(img/coding.png);
+            background-repeat: no-repeat;
+            background-size : 100% ;
+        }
+        
+        
+        
+        /* 네비게이션 */
+                ol,
+        header ul,
+        div ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        body a:link {
+          color: white;
+          text-decoration: none;
+        }
+        body a:visited {
+          color: white;
+          text-decoration: none;
+        }
+
+                #header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          justify-content: space-between;
+          padding: 1rem;
+            color: white;
+            z-index: 1;
+        }
+
+        .active{
+          background-color: #5F4B8B;
+          transition-duration: 0.3s;
+          transition-timing-function: ease;
+
+          -webkit-transition-duration:0.2s;
+          -webkit-transition-timing-function:ease;
+        }
+
+        .deactive{
+
+          background-color: transparent;
+          transition-duration: 0.3s;
+          transition-timing-function: ease;
+
+          -webkit-transition-duration:0.2s;
+          -webkit-transition-timing-function:ease;
+        
+        }
+        nav,
+        .icons {
+          padding: 20px;
+        }
+
+        nav ul li {
+          display: inline-block;
+          padding: 0 10px;
+            padding-top: 10px;
+            padding-bottom: -10px;
+        }
+        section{
+          width: 80vw;
+          padding: 10vw;
+          padding-top: 50vh;
+        }
+        
+        .title{
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        
+        li {
+            font-size: 20px
+        }
+        
+        /* */
+        
+        
+        
+        
+        .my_img{
+            width: 270px;
+            height: auto;
+            border-radius: 70%;
+            margin-top: 70px;
+            margin-left: 150px;
+        }
+        
+        .name {
+            color: white;
+            margin-top: 10px;
+            margin-left: 165px;
+            text-align: center;
+        }
+        
+        .hello {
+            width: 650px;
+            height: auto;
+            margin-top: 70px;
+            margin-left: 100px;
+            margin-bottom: -20px;
+            
+        }
+        .main_contant{
+            margin-left: 70px;
+            
+        }
+        .t1{
+            margin-top: 70px;
+            margin-left: 120px;
+        }
+        
+        .bb {
+            margin-left: 0px;
+            width: 94%;
+            height: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            padding-bottom: 1px;
+            border-color: white;
+            color: white;
+            opacity: 100%;
+            Border-radius : 10px;
+            position: fixed;
+
+        }
+        
+        
+        
+        
+        
+        
+      
+    /*  여기서 부터는 스크롤 css  */
+        
+        .scrolldown-wrapper {
+	left: 50%;
+	position: absolute;
+	text-align: center;
+    
+	bottom: -20px;
+	transform: translate(-50%, -50%);
+            
+}
+  
+.scrolldown {
+	border: 2px solid #FFFFFF;
+	border-radius: 30px;
+	height: 46px;
+	width: 30px;
+    
+    
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+	animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+	fill: #FFFFFF;
+}
+  
+.scrolldown-p2 {
+	animation-delay: .75s;
+}
+
+@keyframes scrolldown {
+	0% {
+		opacity: 0;
+		transform: translate(0, -8px);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, 8px);
+	}
+}
+        
+        
+        /* 끝 스크롤 css  */
+        .scroll{
+            color: white;
+            font-size: 15px;
+            
+            
+        }
+        
+        
+        
+        .box_2{
+            margin-top: 130px;
+            margin-bottom: 60px;
+            
+        }
+        
+        /* 2번째 페이지  */
+        .hd{
+            padding-top: 50px;
+            margin-left: 50px;
+        }
+        
+        
+        .me2 {
+            width: 270px;
+            height: auto;
+            margin: 100px;
+            margin-left: 300px;
+            
+            border-radius: 70%;
+            
+        }
+        .box3 {
+            background-color: #45326E;
+            color: white;
+            padding-bottom: 90px;
+        }
+        
+        
+        .current{
+            margin: 50px;
+            background-color: white;
+            padding: 30px;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            border: 4px solid #45326E;
+            
+            
+            
+        }
+        
+        .vision {
+            margin: 50px;
+            background-color: #45326E;
+            color: white;
+            padding: 30px;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            
+        }
+        
+        .box4{
+            padding-bottom: 30px;
+        }
+        .box5 {
+            background-color: #45326E;
+            color: white;
+            padding-bottom: 10px;
+        }
+        
+        .info{
+            font-size: 120px;
+            padding-left: 100px;
+            text-align: center;
+            margin-left: 130px;
+            
+        }
+        
+        
+        .box6 {
+            background-color: #1F113C;
+            padding-bottom: 8px;
+            color: #8B8892;
+            text-align: center;
+        }
+        .box6 p {
+            padding-top: 25px;
+        }
+        
+        
+        
+        
+        /* 테스트 */
+        
+        
+        
+        
+        
+        
+        
+    </style>
+    
+    <title>Dowon Yun</title>
+  </head>
+  <body>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <script type="text/javascript">
+           
+          
+          $(function(){
+            $(document).on('scroll', function(){
+                if($(window).scrollTop() > 100){
+                    $("#header").removeClass("deactive");
+                    $("#header").addClass("active");
+                }else{
+                    $("#header").removeClass("active");
+                    $("#header").addClass("deactive");
+                }
+            })
+
+        });
+          
+          
+      </script>
+
+
+      <header>
+        <div id="header" class="deactive">
+            <h1 class="title"><a href="index.html">Dowon Yun</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+      </header>
+      <div class="main_scr">
+          <hr class="bb" />
+          
+          <div class="t1">
+        <table class="main_contant">
+            <tr>
+                <td><img class="my_img" src="img/me(1).png" alt="환하게 웃고 있는 윤도원"><strong><h3 class="name">윤도원<br /> Dowon Yun</h3></strong></td>
+                <td><img class="hello" src="img/hello.png" alt="안녕을 여러 언어로 프린트 하는 이미지"></td>
+            </tr>
+        </table>
+              </div>
+          
+      
+        <div class="scrolldown-wrapper">
+	<div class="scrolldown">
+		<svg height="30" width="10">
+			<circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+			<circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+		</svg>
+         
+	</div>
+    <p class="scroll">scroll</p>
+</div>
+         
+          
+      </div>
+      
+      
+      <div class="box_2">
+          <h2 class="hd">-INTRO</h2>
+          <table>
+              <tr>
+                  <td>
+        <img src="img/me_2.png" class="me2" alt="환하게 웃고 브이를 하는 윤도원">
+                      </td>
+                  <td>
+                  <h2>안녕하세요 제 이름은 윤도원입니다 ! :D <br /> 이 웹사이트는 제가 했던 다양한 프로젝트,<br />저의 관심사를 담아보았습니다.<br /><br />아래로 스크롤 해주세요 !</h2>
+                  </td>
+                  </tr>
+        </table>
+      </div>
+      <div class="box3">
+          <strong><h2 class="hd">-GOAL</h2></strong>
+        
+          <div class="vision">
+            <strong><h4>All-Arounder</h4></strong>
+              <p>저의 목표는 모든 영역에서 개발할 수 있는 개발자가 되는것 입니다.<br /> 제가 생각 한것을 그대로 프로그램으로 만들 수 있다면 언제 어디서든지 불편함을 해결할 수 있다고 생각했기 때문입니다. :D</p>
+          
+          </div>
+          
+      </div>
+      
+      <div class="box4">
+          
+          <h2 class="hd">-ROADMAP</h2>
+          <table>
+          
+          <tr>
+              <td >
+          <div class="current">
+              <strong><h3>목표 금액 모으기</h3></strong><br />
+              <p>25살까지 내가 목표했던 금액 모으기<br /><br />
+              엄청난 금액은 아니여도 열심히 노력해서 <br /> 저의 목표된 금액에 도달하여 나중에 <br />여유를 느끼며 살고싶어요 ! <br />
+                  제가 해보고싶은 것도 많고 도전 욕심이 강해서 <br />나중에 여유가 된다면 해보고 싶은 모든걸 <br />전부 도전해볼 생각합니다 :D <br /><br /> 
+            
+              </p>
+              <h6> • current </h6>
+          </div>
+          </td>
+              
+              <td >
+          <div class="vision">
+              <strong><h3>스타트업 도전하기</h3></strong><br />
+              <p>목표한 금액을 전부 모은 후 스타트업 도전하기<br /><br />
+              저는 스타트업에 관심이 많아서 <br /> 아이디어가 떠오르면 전부다 기록해 놓아요! <br />이런 아이디어로 이 세상을 <br />더 나은 세상으로 바꾸고 싶은 생각이 있습니다. <br />
+                    많은 분야를 도전해 보면서<br /> 제가 생각한 아이디어를 실현해 볼 예정입니다 !<br /> <br /> 
+                  
+              </p>
+              <h6> • after 25 years old </h6>
+          </div>
+          </td>
+              
+              <td >
+          <div class="vision">
+              <strong><h3>봉사하기</h3></strong><br />
+              <p>나의 지식을 모두에게 나누기<br /><br />
+              제가 처음 코딩을 시작한 초등학생때 근처에 <br /> 코딩 학원이 있던것도 아니였고 인터넷에는 <br />모두 영어가 기본이라 진입장벽이 <br />높았던것 같아요. 그래서 나중에 기회가 된다면 <br />제가 가진 지식을 필요한 <br />분들에게 나누며 살고싶습니다 :)<br /><br />
+              </p>
+              <h6> • after 40 years old </h6>
+          </div>
+          </td>
+              
+              
+        </tr>
+          
+          </table>
+      </div>
+      
+      <div class="box5">
+          <h2 class="hd">-MORE</h2>
+        
+          <div class="vision" style="margin-top: 10px; padding-top: 10px;">
+              <strong><h4>제가 더 궁금한가요?</h4></strong>
+              <p><br />더 많은 정보는 여기를 참고해 주시요 !</p> <br />
+                  <table>
+                      <tr>
+                          <td>
+                              <a href="about.html">
+                  <div class="info">
+                     <i class="fa-solid fa-address-card"></i>
+                  <h2 style="margin-top: -20px;">ABOUT</h2>  
+                  </div>
+                                  </a>
+                              </td>
+                          <td>
+                              <a href="project.html">
+                                <div class="info">
+                                    <i class="fa-solid fa-file-code"></i>
+                  <h2 style="margin-left: 0px; margin-top: -20px;">PROJECT</h2>  
+                  </div>
+                                  </a>
+                          
+                          </td>
+                          
+                          <td>
+                              <a href="contact.html">
+                                <div class="info">
+                                    <i class="fa-solid fa-circle-nodes"></i>
+                                      <h2 style="margin-left: 0px; margin-top: -20px;">CONTACT</h2>  
+                                      </div> 
+                                  </a>
+                          </td>
+                          
+                    </tr>
+                  
+                  </table>
+              
+          </div>
+      </div>
+      <div class="box6">
+            <p>Use Framework by Bootstrap, jquery, fontawesome. | Designed by Dowon Yun</p>
+      </div>
+  </body>
+</html>
